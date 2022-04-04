@@ -1,0 +1,71 @@
+.mobile-container {
+  display: none;
+
+  position: fixed;
+  padding: 60px 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 11;
+  right: 0;
+  background-color: var(--mob-menu-back-color);
+
+  transition: right 500ms, visibility 500ms;
+
+  @media screen and (min-width: 768px) {
+    width: 30%;
+    height: 100vh;
+  }
+}
+.mobile-container.is-open {
+  display: block;
+
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.closing-button {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  display: block;
+  border: none;
+  fill: var(--clear-white);
+  background-color: transparent;
+}
+.closing-button:hover,
+.closing-button:focus {
+  fill: var(--main-red);
+}
+.buy-now {
+  display: block;
+  margin: auto;
+  padding: 12px 40px;
+  color: var(--main-red);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 209px;
+  height: 44px;
+}
+.injection {
+  margin-left: 20px;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+.mobile-item:last-child {
+  height: 42px;
+  border-bottom: 1px solid var(--mob-filter-border-color);
+}
+.mobile-item {
+  border-top: 1px solid var(--mob-filter-border-color);
+}
+.mob-link {
+  color: var(--clear-white);
+}
+.mob-link:hover,
+.mob-link:focus {
+  color: var(--main-red);
+}

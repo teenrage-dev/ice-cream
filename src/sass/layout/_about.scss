@@ -1,0 +1,137 @@
+.about {
+  background-color: var(--sections-light-pink-background);
+  padding-top: 120px;
+  // position: relative;
+  background-image: url('../images/about/bg-milk-mobile-1x.png');
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom 80px center;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/bg-milk-mobile@2x.png');
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/about/bg-milk-1x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom -75px center;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/bg-milk-2x.png');
+    }
+  }
+
+  .label-title {
+    font-style: normal;
+    margin-bottom: 15px;
+  }
+
+  .section-title {
+    font-style: normal;
+    margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 55px;
+    }
+  }
+
+  .about-image {
+    display: flex;
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    @keyframes pulse {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+
+      50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  .about-btn {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--main-red);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 37px;
+    margin-left: 30px;
+    @media screen and (min-width: 768px) {
+      margin-left: 0px;
+    }
+  }
+  .about-icon {
+    display: flex;
+    margin-left: 14px;
+    margin-right: 17px;
+  }
+  .about-text {
+    color: var(--text-grey);
+    font-style: normal;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 17px;
+    @media screen and (min-width: 768px) {
+      padding: 0px;
+      margin-bottom: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 45px;
+    }
+  }
+  .text-black {
+    color: var(--clear-black);
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 33px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 39px;
+    }
+  }
+  .is-hidden {
+    display: none;
+  }
+
+  .about-content {
+    @include tab {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  .about-image-wrapper {
+    @include tab {
+      flex-basis: 50%;
+      margin-right: 17px;
+    }
+    @include desk {
+      margin-right: 74px;
+    }
+  }
+  .about-text-wrapper {
+    @include tab {
+      flex-basis: 50%;
+      padding-top: 50px;
+    }
+  }
+}

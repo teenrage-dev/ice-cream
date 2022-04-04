@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include tab {
+    max-width: 740px;
+  }
+  @include desk {
+    max-width: 1090px;
+  }
+}
