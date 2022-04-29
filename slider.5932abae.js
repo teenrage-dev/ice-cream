@@ -12,4 +12,4 @@ var i;!function(e){"use strict";"function"==typeof i&&i.amd?i(["jquery"],e):"und
 },{"jquery":"juYr"}],"wzuc":[function(require,module,exports) {
 "use strict";var e=l(require("jquery")),r=l(require("slick-carousel"));function l(e){return e&&e.__esModule?e:{default:e}}(0,e.default)(".review-slider").slick({slidesToShow:1,slidesToScroll:1,autoplay:!0,autoplaySpeed:2e3,arrows:!1,dots:!0});
 },{"jquery":"juYr","slick-carousel":"QAGU"}]},{},["wzuc"], null)
-//# sourceMappingURL=/Black-Sea-Team/slider.5932abae.js.map
+//# sourceMappingURL=/ice-cream/slider.5932abae.js.map
